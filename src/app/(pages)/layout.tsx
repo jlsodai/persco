@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import FooterSection from "@/sections/FooterSection";
 import React from "react";
 
 const PagesLayout = ({ children }: { children: React.ReactNode }) => {
@@ -8,6 +9,7 @@ const PagesLayout = ({ children }: { children: React.ReactNode }) => {
         <Navigation />
       </section>
       {children}
+      <FooterSection />
     </>
   );
 };

@@ -2,12 +2,24 @@
 import Navigation from "@/components/Navigation";
 import FooterSection from "@/sections/FooterSection";
 import HeroSection from "@/sections/HeroSection";
-import {
-  FaFacebookSquare,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitterSquare,
-} from "react-icons/fa";
+
+const clients = [
+  {
+    title: "Independent Labs",
+    imgUrl:
+      "https://res.cloudinary.com/dmaestro/image/upload/v1703856498/pharmacist_edmrvp.jpg",
+  },
+  {
+    title: "Hospital Systems and Groups",
+    imgUrl:
+      "https://res.cloudinary.com/dmaestro/image/upload/v1703857029/hospital_h15i9r.jpg",
+  },
+  {
+    title: "Long term care patients",
+    imgUrl:
+      "https://res.cloudinary.com/dmaestro/image/upload/v1703857776/longterm_lggex5.jpg",
+  },
+];
 
 export default function Home() {
   return (
@@ -17,8 +29,8 @@ export default function Home() {
         <HeroSection />
       </section>
       <section className="container py-16">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-          <div className="prose">
+        <div className="grid md:grid-cols-2 gap-8 md:16 items-center">
+          <div className="md:pr-40">
             <h2>Who we are</h2>
             <p className="mt-8">
               Persco Enterprise is a regional transportation service provider
@@ -36,15 +48,28 @@ export default function Home() {
               contractors.
             </p>
           </div>
-          <div className="bg-gray-300 h-[400px] rounded-md"></div>
+          <img
+            src="https://res.cloudinary.com/dmaestro/image/upload/v1703859086/delivery_jr3ou9.png"
+            alt=""
+          />
         </div>
       </section>
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-100">
         <div className="container">
           <h2>Who we serve</h2>
           <div className="grid md:grid-cols-3 gap-8 md:gap-16 mt-8">
-            {[...Array(3)].map((e, i) => (
-              <div className="bg-gray-300 h-[200px] rounded-md" key={i}></div>
+            {clients.map((client, i) => (
+              <div
+                className="bg-cover relative h-[250px] rounded-md flex"
+                key={i}
+                style={{
+                  background: `url('${client.imgUrl}') no-repeat center center / cover`,
+                }}
+              >
+                <h2 className="absolute bg-black/30 flex text-white items-center justify-center px-16 text-center w-full h-full">
+                  {client.title}
+                </h2>
+              </div>
             ))}
           </div>
         </div>

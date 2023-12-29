@@ -62,8 +62,8 @@ const Navigation = () => {
                   <li key={i}>
                     <Link
                       href={link.url}
-                      className={`block py-2 px-8  ${
-                        currentRoute === link.url ? "text-orange-700" : ""
+                      className={`block py-2 px-8 hover:text-[#FC5500]  ${
+                        currentRoute === link.url ? "text-[#FC5500]" : ""
                       }  rounded md:p-0`}
                       aria-current="page"
                     >
