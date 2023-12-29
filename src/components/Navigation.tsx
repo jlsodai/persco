@@ -14,7 +14,7 @@ const Navigation = () => {
 
   return (
     <header>
-      <div className="bg-green-700 h-2"></div>
+      <div className="bg-[#00A600] h-2"></div>
       <div className="container py-4 flex justify-between items-center -sm:bg-white">
         <Link href="/" className="py-2">
           <img
@@ -75,7 +75,7 @@ const Navigation = () => {
                   <Link href="/quote" className="block py-2">
                     <Button
                       variant="default"
-                      className="bg-green-700 hover:bg-green-600 rounded text-white px-8"
+                      className="bg-[#00A600] hover:bg-green-500 rounded text-white px-8"
                     >
                       Get Quote
                     </Button>

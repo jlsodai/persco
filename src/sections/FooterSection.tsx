@@ -9,7 +9,7 @@ import {
 
 const FooterSection = () => {
   return (
-    <section className="bg-green-700 py-8">
+    <section className="bg-[#00A600] py-8">
       <div className="grid md:grid-cols-[3fr_1fr] container items-center gap-16">
         <div className="flex flex-col md:flex-row md:h-[150px] items-center overflow-auto gap-2 md:gap-8">
           <img
