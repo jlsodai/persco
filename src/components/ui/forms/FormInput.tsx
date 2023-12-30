@@ -55,9 +55,9 @@ const FormInput = ({
         </select>
       )}
       {eltype === "radio" && (
-        <ul className="grid md:grid-cols-2 max-w-md">
+        <>
           {options?.map((option, i) => (
-            <li key={i} className="flex items-center ps-3">
+            <div key={i} className="flex items-center ps-3">
               <input
                 id={`option-${i}`}
                 type="radio"
@@ -71,9 +71,9 @@ const FormInput = ({
               >
                 {option}
               </label>
-            </li>
+            </div>
           ))}
-        </ul>
+        </>
       )}
     </div>
   );

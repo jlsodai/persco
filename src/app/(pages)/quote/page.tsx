@@ -116,14 +116,14 @@ const QuotePage = () => {
                 required={true}
               />
             </div>
-            <div className="grid gap-8">
-              <FormInput
-                label="Message"
-                placeholder="Enter message"
-                name="message"
-                required={true}
-                eltype="textarea"
-              />
+            <FormInput
+              label="Message"
+              placeholder="Enter message"
+              name="message"
+              required={true}
+              eltype="textarea"
+            />
+            <div className="grid md:grid-cols-2 max-w-md">
               <FormInput
                 eltype="radio"
                 options={industries}
@@ -131,13 +131,13 @@ const QuotePage = () => {
                 name="industry"
                 required={true}
               />
-              <button
-                type="submit"
-                className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#00A600] sm:w-fit hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-primary"
-              >
-                Submit Request
-              </button>
             </div>
+            <button
+              type="submit"
+              className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#00A600] sm:w-fit hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-primary"
+            >
+              Submit Request
+            </button>
           </form>
         </div>
       </section>
