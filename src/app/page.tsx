@@ -30,7 +30,7 @@ export default function Home() {
       </section>
       <section className="container py-16">
         <div className="grid md:grid-cols-2 gap-8 md:16 items-center">
-          <div className="md:pr-40">
+          <div className="md:pr-20">
             <h2>Who we are</h2>
             <p className="mt-8">
               Persco Enterprise is a regional transportation service provider
