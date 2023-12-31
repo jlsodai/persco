@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation";
 import FooterSection from "@/sections/FooterSection";
 import HeroSection from "@/sections/HeroSection";
+import WhoWeServe from "@/sections/WhoWeServe";
 
 const clients = [
   {
@@ -57,21 +58,7 @@ export default function Home() {
       <section className="py-16 bg-gray-100">
         <div className="container">
           <h2>Who we serve</h2>
-          <div className="grid md:grid-cols-3 gap-8 md:gap-16 mt-8">
-            {clients.map((client, i) => (
-              <div
-                className="bg-cover relative h-[250px] rounded-md flex"
-                key={i}
-                style={{
-                  background: `url('${client.imgUrl}') no-repeat center center / cover`,
-                }}
-              >
-                <h2 className="absolute bg-black/30 flex text-white items-center justify-center px-16 text-center w-full h-full">
-                  {client.title}
-                </h2>
-              </div>
-            ))}
-          </div>
+          <WhoWeServe />
         </div>
       </section>
       <FooterSection />

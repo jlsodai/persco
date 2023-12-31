@@ -1,5 +1,5 @@
 import PageTitle from "@/components/PageTitle";
-import React from "react";
+import WhoWeServe from "@/sections/WhoWeServe";
 
 const ServiceSection = () => {
   return (
@@ -7,7 +7,8 @@ const ServiceSection = () => {
       <PageTitle title="Our Services" />
       <section className="py-16">
         <div className="container">
-          <h2>Services content comes here</h2>
+          <h2>Who we serve</h2>
+          <WhoWeServe />
         </div>
       </section>
     </>
