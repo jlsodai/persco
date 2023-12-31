@@ -112,7 +112,7 @@ const QuotePage = () => {
                 options={states}
                 label="State"
                 placeholder="Select a state"
-                name="city"
+                name="state"
                 required={true}
               />
             </div>
