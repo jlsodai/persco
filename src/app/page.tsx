@@ -29,8 +29,14 @@ export default function Home() {
         <Navigation />
         <HeroSection />
       </section>
-      <section className="container py-16">
-        <div className="grid md:grid-cols-2 gap-8 md:16 items-center">
+      <section className="py-16">
+        <div className="container">
+          <h2>Who we serve</h2>
+          <WhoWeServe />
+        </div>
+      </section>
+      <section className="py-16 bg-gray-100">
+        <div className="container grid md:grid-cols-2 gap-8 md:16 items-center">
           <div className="md:pr-20">
             <h2>Who we are</h2>
             <p className="mt-8">
@@ -53,12 +59,6 @@ export default function Home() {
             src="https://res.cloudinary.com/dmaestro/image/upload/v1703859086/delivery_jr3ou9.png"
             alt=""
           />
-        </div>
-      </section>
-      <section className="py-16 bg-gray-100">
-        <div className="container">
-          <h2>Who we serve</h2>
-          <WhoWeServe />
         </div>
       </section>
       <FooterSection />
