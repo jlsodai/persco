@@ -13,6 +13,39 @@ import { TbTargetArrow } from "react-icons/tb";
 
 import { FaUserAlt } from "react-icons/fa";
 
+const colors = ["bg-indigo-50", "bg-amber-50", "bg-stone-50", "bg-green-50"];
+const textColors = [
+  "text-indigo-800",
+  "text-amber-800",
+  "text-stone-800",
+  "text-green-800",
+];
+const services = [
+  {
+    title: "Same Day Delivery",
+    imgUrl:
+      "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
+    desc: "Our Same Day Delivery service – the epitome of convenience and efficiency. In today's fast-paced world, we understand the importance of instant gratification, and our Same Day Delivery service is designed to meet your urgent needs.",
+  },
+  {
+    title: "Dedicated Route Service",
+    imgUrl:
+      "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
+    desc: "Key features of our Dedicated Route Service include real-time tracking, allowing you to monitor the movement of your shipments at every stage. We prioritize consistency and reliability, providing a dedicated team of drivers familiar with your route to enhance the overall efficiency of the delivery process. This service is ideal for businesses with recurring delivery needs, ensuring a dependable and timely supply chain.",
+  },
+  {
+    title: "On-Demand service",
+    imgUrl:
+      "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
+    desc: "With On-Demand, you have the power to request services or products whenever you need them. Whether it's a spontaneous delivery, a quick service call, or immediate access to resources, our platform is ready to respond. We leverage advanced technology to connect you with our services promptly, ensuring that your requests are met with speed and efficiency.",
+  },
+  {
+    title: "Route Optimization Tools",
+    imgUrl:
+      "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
+    desc: "Our state-of-the-art Route Optimization Tools utilize cutting-edge algorithms to analyze variables such as traffic patterns, delivery windows, and vehicle capacities. The result is a meticulously optimized route that minimizes travel time, reduces fuel consumption, and enhances overall fleet productivity. By harnessing the power of technology, we empower businesses to streamline their logistics operations and maximize resource utilization.",
+  },
+];
 const choices = [
   {
     title: "24 Hour Professional Customer Service Team",
@@ -76,8 +109,31 @@ const ServiceSection = () => {
       <PageTitle title="Our Services" />
       <section className="py-16">
         <div className="container">
-          <h2>Who we serve</h2>
-          <WhoWeServe />
+          <div className="grid grid-cols-2 gap-8">
+            {services.map((service, i) => (
+              <div className={`flex flex-col gap-4 ${colors[i]} p-6`} key={i}>
+                <p className={`font-extrabold text-xl ${textColors[i]}`}>
+                  {service.title}
+                </p>
+                <div className="flex gap-8">
+                  <div
+                    className="bg-cover relative h-[250px] w-[250px] rounded-md shrink-0"
+                    key={i}
+                    style={{
+                      background: `url('${service.imgUrl}') no-repeat center center / cover`,
+                    }}
+                  ></div>
+
+                  <p className="text-gray-600">{service.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="container mb-16">
+        <div className="bg-gray-400">
+          <h2 className="py-32 text-center">How it works goes here</h2>
         </div>
       </section>
       <section className="bg-gray-50">
