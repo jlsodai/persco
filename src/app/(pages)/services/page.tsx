@@ -144,7 +144,7 @@ const ServiceSection = () => {
       <section>
         <div className="container py-16">
           <h2>Why choose us</h2>
-          <div className="grid md:grid-cols-3 gap-x-16 gap-y-12 items-start mt-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12 items-start mt-8">
             {choices.map((choice, i) => (
               <dl
                 key={i}
