@@ -30,10 +30,8 @@ const FooterSection = () => {
         </div>
         <div className="text-white -md:text-center">
           <p>
-            21240 Ashburn Crossing Drive,
-            <br /> Suite 165,
-            <br />
-            Ashburn, VA 20147
+            5 Seneca Street
+            <br /> Worcester Ma 01603
             <br />
             Phone number +1 508-579-3655
             <br />
