@@ -33,7 +33,7 @@ const FooterSection = () => {
             5 Seneca Street
             <br /> Worcester Ma 01603
             <br />
-            Phone number +1 508-579-3655
+            Phone number +1 774 666 1779
             <br />
           </p>
           <div className="mt-4 flex gap-4 -md:justify-center">

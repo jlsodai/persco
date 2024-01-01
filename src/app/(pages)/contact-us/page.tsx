@@ -12,7 +12,7 @@ const ContactPage = () => {
               Please fill out the below to get in touch with us.
             </p>
             <p>
-              <span className="font-bold">Phone:</span> +1 508-579-3655 <br />
+              <span className="font-bold">Phone:</span> +1 774 666 1779 <br />
               <span className="font-bold">Email: </span> info@pdeliveryrx.com
             </p>
           </div>
