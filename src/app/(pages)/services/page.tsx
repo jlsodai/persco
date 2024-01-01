@@ -109,34 +109,39 @@ const ServiceSection = () => {
       <PageTitle title="Our Services" />
       <section className="py-16">
         <div className="container">
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid xl:grid-cols-2 gap-8">
             {services.map((service, i) => (
               <div className={`flex flex-col gap-4 ${colors[i]} p-6`} key={i}>
                 <p className={`font-extrabold text-xl ${textColors[i]}`}>
                   {service.title}
                 </p>
-                <div className="flex gap-8">
+                <div className="md:flex gap-6">
                   <div
-                    className="bg-cover relative h-[250px] w-[250px] rounded-md shrink-0"
+                    className="bg-cover relative h-[180px] w-full md:w-[200px] lg:h-[250px] lg:w-[250px] rounded-md shrink-0"
                     key={i}
                     style={{
                       background: `url('${service.imgUrl}') no-repeat center center / cover`,
                     }}
                   ></div>
 
-                  <p className="text-gray-600">{service.desc}</p>
+                  <p className="text-gray-600 -md:mt-4">{service.desc}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <section className="container mb-16">
-        <div className="bg-gray-400">
-          <h2 className="py-32 text-center">How it works goes here</h2>
+      <section className="bg-gray-50">
+        <div className="container text-center pt-16">
+          <h2>How it works</h2>
+          <img
+            className="max-w-5xl mx-auto w-full"
+            src="https://res.cloudinary.com/dmaestro/image/upload/v1704139274/howitworks_gg2yap.png"
+            alt=""
+          />
         </div>
       </section>
-      <section className="bg-gray-50">
+      <section>
         <div className="container py-16">
           <h2>Why choose us</h2>
           <div className="grid md:grid-cols-3 gap-x-16 gap-y-12 items-start mt-8">
