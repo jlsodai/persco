@@ -10,6 +10,7 @@ import {
   RiStethoscopeFill,
 } from "react-icons/ri";
 import { TbTargetArrow } from "react-icons/tb";
+import { CiRoute, CiDeliveryTruck, CiMobile3, CiMap } from "react-icons/ci";
 
 import { FaUserAlt } from "react-icons/fa";
 
@@ -23,24 +24,28 @@ const textColors = [
 const services = [
   {
     title: "Same Day Delivery",
+    icon: <CiDeliveryTruck className="h-32 w-32 text-indigo-800" />,
     imgUrl:
       "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
     desc: "Our Same Day Delivery service – the epitome of convenience and efficiency. In today's fast-paced world, we understand the importance of instant gratification, and our Same Day Delivery service is designed to meet your urgent needs.",
   },
   {
     title: "Dedicated Route Service",
+    icon: <CiRoute className="h-32 w-32 text-amber-800" />,
     imgUrl:
       "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
     desc: "Key features of our Dedicated Route Service include real-time tracking, allowing you to monitor the movement of your shipments at every stage. We prioritize consistency and reliability, providing a dedicated team of drivers familiar with your route to enhance the overall efficiency of the delivery process. This service is ideal for businesses with recurring delivery needs, ensuring a dependable and timely supply chain.",
   },
   {
     title: "On-Demand service",
+    icon: <CiMobile3 className="h-32 w-32 text-stone-800" />,
     imgUrl:
       "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
     desc: "With On-Demand, you have the power to request services or products whenever you need them. Whether it's a spontaneous delivery, a quick service call, or immediate access to resources, our platform is ready to respond. We leverage advanced technology to connect you with our services promptly, ensuring that your requests are met with speed and efficiency.",
   },
   {
     title: "Route Optimization Tools",
+    icon: <CiMap className="h-32 w-32 text-green-800" />,
     imgUrl:
       "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
     desc: "Our state-of-the-art Route Optimization Tools utilize cutting-edge algorithms to analyze variables such as traffic patterns, delivery windows, and vehicle capacities. The result is a meticulously optimized route that minimizes travel time, reduces fuel consumption, and enhances overall fleet productivity. By harnessing the power of technology, we empower businesses to streamline their logistics operations and maximize resource utilization.",
@@ -67,7 +72,7 @@ const choices = [
       <RiShieldCheckFill className="absolute left-1 top-1 h-5 w-5 text-tender" />
     ),
     description:
-      "Our use of technology gives our clients real time delivery confirmation through electronic scans and signatures.",
+      "By upholding the highest standards set by HIPAA, we guarantee the reliable and secure delivery of medical parcels while safeguarding patient privacy throughout the entire process.",
   },
   {
     title: "Highly Professional Independent Contractors",
@@ -75,7 +80,7 @@ const choices = [
       <RiEBike2Line className="absolute left-1 top-1 h-5 w-5 text-tender" />
     ),
     description:
-      "We belief that our contractors are the face of our clients and thus their professionalism in handling our clients deliveries can impact their business greatly. We therefore have a strict contracting process ranging from CORI Check to Drug Testing. Hence, our clients are assured that their deliveries are being handled by professional contractors.",
+      "Our medical delivery service is elevated by our highly professional independent contractors who contribute significantly to our commitment to excellence. Rigorously selected for their expertise and reliability, these contractors specialize in the intricacies of medical logistics.",
   },
   {
     title: "Competitive and Flexible Pricing",
@@ -83,7 +88,7 @@ const choices = [
       <TbTargetArrow className="absolute left-1 top-1 h-5 w-5 text-tender" />
     ),
     description:
-      "We belief that our contractors are the face of our clients and thus their professionalism in handling our clients deliveries can impact their business greatly. We therefore have a strict contracting process ranging from CORI Check to Drug Testing. Hence, our clients are assured that their deliveries are being handled by professional contractors.",
+      "Our competitive and flexible pricing caters to diverse client needs, striking a balance between affordability and quality. We believe in transparent models to build trust and lasting partnerships, adapting to the dynamic market and unique client requirements.",
   },
   {
     title: "Technology",
@@ -91,7 +96,7 @@ const choices = [
       <RiComputerLine className="absolute left-1 top-1 h-5 w-5 text-tender" />
     ),
     description:
-      "We belief that our contractors are the face of our clients and thus their professionalism in handling our clients deliveries can impact their business greatly. We therefore have a strict contracting process ranging from CORI Check to Drug Testing. Hence, our clients are assured that their deliveries are being handled by professional contractors.",
+      "Our advanced tracking, secure digital communication, and analytics optimize routes, ensure timely and cost-effective services. Robust encryption is a priority, particularly for medical deliveries. Staying at the forefront of technology allows us to consistently meet evolving client needs.",
   },
   {
     title: "Healthcare Oriented",
@@ -106,7 +111,14 @@ const choices = [
 const ServiceSection = () => {
   return (
     <>
-      <PageTitle title="Our Services" />
+      {/* <PageTitle title="Our Services" /> */}
+      <section className="bg-cover bg-[url('https://res.cloudinary.com/dmaestro/image/upload/v1704405060/serv_jb1zbc.jpg')]">
+        <div className="container h-72 text-white flex items-center">
+          <h2 className="text-5xl">
+            Our <span className="text-[#FC5500]">Services</span>
+          </h2>
+        </div>
+      </section>
       <section className="py-16">
         <div className="container">
           <div className="grid xl:grid-cols-2 gap-8">
@@ -116,13 +128,14 @@ const ServiceSection = () => {
                   {service.title}
                 </p>
                 <div className="md:flex gap-6">
-                  <div
+                  {/* <div
                     className="bg-cover relative h-[180px] w-full md:w-[200px] lg:h-[250px] lg:w-[250px] rounded-md shrink-0"
                     key={i}
                     style={{
                       background: `url('${service.imgUrl}') no-repeat center center / cover`,
                     }}
-                  ></div>
+                  ></div> */}
+                  <div className="">{service?.icon}</div>
 
                   <p className="text-gray-600 -md:mt-4">{service.desc}</p>
                 </div>

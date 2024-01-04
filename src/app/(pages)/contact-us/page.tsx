@@ -4,7 +4,14 @@ import FormInput from "@/components/ui/forms/FormInput";
 const ContactPage = () => {
   return (
     <>
-      <PageTitle title="Contact Us" />
+      {/* <PageTitle title="Contact Us" /> */}
+      <section className="bg-cover bg-[url('https://res.cloudinary.com/dmaestro/image/upload/v1704405058/cont_egf9rq.jpg')]">
+        <div className="container h-72 text-white flex items-center">
+          <h2 className="text-5xl">
+            Contact <span className="text-[#FC5500]">Us</span>
+          </h2>
+        </div>
+      </section>
       <section className="py-16">
         <div className="container max-w-4xl">
           <div className="text-center">

@@ -6,7 +6,14 @@ import React from "react";
 const AboutPage = () => {
   return (
     <>
-      <PageTitle title="About Us" />
+      {/* <PageTitle title="About Us" /> */}
+      <section className="bg-cover bg-[url('https://res.cloudinary.com/dmaestro/image/upload/v1704405060/about_dlryiw.jpg')]">
+        <div className="container h-72 text-white flex items-center">
+          <h2 className="text-5xl">
+            About <span className="text-[#FC5500]">Us</span>
+          </h2>
+        </div>
+      </section>
       <section className="container py-16">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="prose">
