@@ -20,7 +20,7 @@ const FooterSection = () => {
           <img
             src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:fff,e_colorize:100/v1703845301/hipaa_qgn442.png"
             alt=""
-            className="h-[80px] md:h-[120px]"
+            className="h-[120px]"
           />
           <img
             src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:fff,e_colorize:100/v1703846224/clda_ev3t6h.png"
