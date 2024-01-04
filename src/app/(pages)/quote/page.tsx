@@ -63,7 +63,7 @@ const QuotePage = () => {
   return (
     <>
       {/* <PageTitle title="Request for quote" /> */}
-      <section className="bg-cover bg-[url('https://res.cloudinary.com/dmaestro/image/upload/v1704405058/cont_egf9rq.jpg')]">
+      <section className="bg-cover bg-center bg-[url('https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:75/v1704408989/handshake_jtpvw4.jpg')]">
         <div className="container h-72 text-white flex items-center">
           <h2 className="text-5xl">
             Request <span className="text-[#FC5500]">for Quote</span>
