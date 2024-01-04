@@ -12,7 +12,7 @@ const HeroSection = () => {
             data-aos="fade-up"
             data-aos-delay="50"
           >
-            Your <span className="text-[#FC5500]">Excellent Partner</span> in
+            Your <span className="text-[#fff]">Excellent Partner</span> in
             Health Delivery
           </h3>
           <a href="/contact-us" data-aos="fade-up" data-aos-delay="200">
