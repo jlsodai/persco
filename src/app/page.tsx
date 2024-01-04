@@ -40,19 +40,25 @@ export default function Home() {
           <div className="md:pr-20">
             <h2>Who we are</h2>
             <p className="mt-8">
-              Persco Enterprise is a regional transportation service provider
-              located in Central Massachusetts - Worcester serving from small to
-              large businesses with its main focus on the healthcare industry.
-              PE is a well known player in the pharmaceutical and IVF industry
-              serving some of the top 5 companies in the industry.
+              Welcome to Persco Enterprise, your trusted partner in
+              transportation and logistics based in Central Massachusetts -
+              Worcester. As a regional service provider, we take pride in
+              serving businesses of all sizes, with a primary focus on the
+              healthcare industry. At Persco, we stand out in the pharmaceutical
+              and IVF sectors, proudly collaborating with some of the top
+              companies in these fields.
             </p>
             <p className="mt-4">
-              We pride ourselves for providing excellent same day delivery and
-              customized logistic solutions to our customers to satisfy all
-              their courier needs. Our sole goal is your BUSINESS SUCCESS. We
-              handle all your logistic needs with integrity in a timely and
-              professional manner through our highly sieved professional
-              contractors.
+              Our commitment is to provide you with excellent same-day delivery
+              and customized logistic solutions to meet all your courier needs.
+              Your business success is our sole goal, and we achieve this by
+              handling your logistics with integrity, professionalism, and the
+              expertise of our highly vetted professional contractors.
+            </p>
+            <p className="mt-4">
+              Explore the seamless and reliable transportation services at
+              Persco Enterprise, where your satisfaction is our priority.
+              Welcome aboard!
             </p>
           </div>
           <img
