@@ -23,15 +23,15 @@ const AboutPage = () => {
               Persco Enterprise is a regional transportation service provider
               located in Central Massachusetts - Worcester serving from small to
               large businesses with its main focus on the healthcare industry.
-              PE is a well known player in the pharmaceutical and IVF industry
-              serving some of the top 5 companies in the industry.
+              PE is a well known player in the pharmaceutical and medical
+              industry serving some of the top 5 companies in the industry.
             </p>
             <p className="mt-4">
               We pride ourselves for providing excellent same day delivery and
               customized logistic solutions to our customers to satisfy all
               their courier needs. Our sole goal is your BUSINESS SUCCESS. We
               handle all your logistic needs with integrity in a timely and
-              professional manner through our highly sieved professional
+              professional manner through our highly experienced professional
               contractors.
             </p>
           </div>

@@ -14,38 +14,70 @@ import { CiRoute, CiDeliveryTruck, CiMobile3, CiMap } from "react-icons/ci";
 
 import { FaUserAlt } from "react-icons/fa";
 
-const colors = ["bg-indigo-50", "bg-amber-50", "bg-stone-50", "bg-green-50"];
+const colors = [
+  "bg-indigo-50",
+  "bg-amber-50",
+  "bg-stone-50",
+  "bg-green-50",
+  "bg-red-50",
+  "bg-yellow-50",
+  "bg-purple-50",
+];
 const textColors = [
   "text-indigo-800",
   "text-amber-800",
   "text-stone-800",
   "text-green-800",
+  "text-red-800",
+  "text-yellow-800",
+  "text-purple-800",
 ];
 const services = [
   {
-    title: "Same Day Delivery",
+    title: "Longterm care hospital systems",
     icon: <CiDeliveryTruck className="h-32 w-32 text-indigo-800" />,
     imgUrl:
       "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
     desc: "Our Same Day Delivery service – the epitome of convenience and efficiency. In today's fast-paced world, we understand the importance of instant gratification, and our Same Day Delivery service is designed to meet your urgent needs.",
   },
   {
+    title: "Home infusions",
+    icon: <CiDeliveryTruck className="h-32 w-32 text-amber-800" />,
+    imgUrl:
+      "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
+    desc: "Our Same Day Delivery service – the epitome of convenience and efficiency. In today's fast-paced world, we understand the importance of instant gratification, and our Same Day Delivery service is designed to meet your urgent needs.",
+  },
+  {
+    title: "Independent lab",
+    icon: <CiDeliveryTruck className="h-32 w-32 text-stone-800" />,
+    imgUrl:
+      "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
+    desc: "Our Same Day Delivery service – the epitome of convenience and efficiency. In today's fast-paced world, we understand the importance of instant gratification, and our Same Day Delivery service is designed to meet your urgent needs.",
+  },
+  {
+    title: "Same Day Delivery",
+    icon: <CiDeliveryTruck className="h-32 w-32 text-green-800" />,
+    imgUrl:
+      "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
+    desc: "Our Same Day Delivery service – the epitome of convenience and efficiency. In today's fast-paced world, we understand the importance of instant gratification, and our Same Day Delivery service is designed to meet your urgent needs.",
+  },
+  {
     title: "Dedicated Route Service",
-    icon: <CiRoute className="h-32 w-32 text-amber-800" />,
+    icon: <CiRoute className="h-32 w-32 text-red-800" />,
     imgUrl:
       "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
     desc: "Key features of our Dedicated Route Service include real-time tracking, allowing you to monitor the movement of your shipments at every stage. We prioritize consistency and reliability, providing a dedicated team of drivers familiar with your route to enhance the overall efficiency of the delivery process. This service is ideal for businesses with recurring delivery needs, ensuring a dependable and timely supply chain.",
   },
   {
     title: "On-Demand service",
-    icon: <CiMobile3 className="h-32 w-32 text-stone-800" />,
+    icon: <CiMobile3 className="h-32 w-32 text-yellow-800" />,
     imgUrl:
       "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
     desc: "With On-Demand, you have the power to request services or products whenever you need them. Whether it's a spontaneous delivery, a quick service call, or immediate access to resources, our platform is ready to respond. We leverage advanced technology to connect you with our services promptly, ensuring that your requests are met with speed and efficiency.",
   },
   {
     title: "Route Optimization Tools",
-    icon: <CiMap className="h-32 w-32 text-green-800" />,
+    icon: <CiMap className="h-32 w-32 text-purple-800" />,
     imgUrl:
       "https://res.cloudinary.com/dmaestro/image/upload/co_rgb:000,e_colorize:20/v1703856498/pharmacist_edmrvp.jpg",
     desc: "Our state-of-the-art Route Optimization Tools utilize cutting-edge algorithms to analyze variables such as traffic patterns, delivery windows, and vehicle capacities. The result is a meticulously optimized route that minimizes travel time, reduces fuel consumption, and enhances overall fleet productivity. By harnessing the power of technology, we empower businesses to streamline their logistics operations and maximize resource utilization.",
@@ -104,7 +136,7 @@ const choices = [
       <RiStethoscopeFill className="absolute left-1 top-1 h-5 w-5 text-tender" />
     ),
     description:
-      "We differentiate ourselves from other couriers by focusing mainly on the healthcare industry. This has enabled us to provide excellent logistic solu- tions due to the enormous experience we have at- tained over the years by concentrating on the industry.",
+      "We differentiate ourselves from other couriers by focusing mainly on the healthcare industry. This has enabled us to provide excellent logistic solutions due to the enormous experience we have attained over the years by concentrating on the industry.",
   },
 ];
 

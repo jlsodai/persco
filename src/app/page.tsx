@@ -45,7 +45,7 @@ export default function Home() {
               Worcester. As a regional service provider, we take pride in
               serving businesses of all sizes, with a primary focus on the
               healthcare industry. At Persco, we stand out in the pharmaceutical
-              and IVF sectors, proudly collaborating with some of the top
+              and medical sectors, proudly collaborating with some of the top
               companies in these fields.
             </p>
             <p className="mt-4">
