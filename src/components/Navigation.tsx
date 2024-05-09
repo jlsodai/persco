@@ -81,6 +81,16 @@ const Navigation = () => {
                     </Button>
                   </Link>
                 </li>
+                <li>
+                  <Link href="/order" className="block py-2">
+                    <Button
+                      variant="default"
+                      className="bg-[#FC5500] hover:bg-[#FC5500] rounded text-white px-8"
+                    >
+                      Place Order
+                    </Button>
+                  </Link>
+                </li>
               </ul>
             </div>
           </nav>
