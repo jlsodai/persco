@@ -34,6 +34,7 @@ const OrderPage = () => {
             name="order"
             data-netlify="true"
           >
+            <input type="hidden" name="form-name" value="order" />
             <div className="grid md:grid-cols-2 gap-8">
               <FormInput
                 label="Pickup Location"
