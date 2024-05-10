@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="space-y-8" name="order" data-netlify="true" method="POST">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <label for="fullname" class="block mb-2 text-sm font-bold"
+            >Pickup Location *</label
+          ><input
+            id="pickup_location"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5"
+            placeholder="Enter Pickup Location"
+            required=""
+            type="input"
+            name="pickup_location"
+          />
+        </div>
+        <div>
+          <label for="fullname" class="block mb-2 text-sm font-bold"
+            >Delivery Location *</label
+          ><input
+            id="delivery_location"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5"
+            placeholder="Enter Delivery Location"
+            required=""
+            type="input"
+            name="delivery_location"
+          />
+        </div>
+        <div>
+          <label for="fullname" class="block mb-2 text-sm font-bold"
+            >Delivery date *</label
+          ><input
+            id="delivery_date"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5"
+            required=""
+            type="date"
+            name="delivery_date"
+          />
+        </div>
+        <div>
+          <label for="fullname" class="block mb-2 text-sm font-bold"
+            >Time ready for pickup </label
+          ><input
+            id="pickup_time"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5"
+            type="time"
+            name="pickup_time"
+          />
+        </div>
+        <div>
+          <label for="fullname" class="block mb-2 text-sm font-bold"
+            >Name *</label
+          ><input
+            id="fullname"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5"
+            placeholder="Enter Full Name"
+            required=""
+            type="input"
+            name="fullname"
+          />
+        </div>
+        <div>
+          <label for="fullname" class="block mb-2 text-sm font-bold"
+            >Service *</label
+          ><select
+            id="service"
+            name="service"
+            class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5"
+          >
+            <option>Select a service</option>
+            <option value="Longterm care hospital systems">
+              Longterm care hospital systems
+            </option>
+            <option value="Home infusions">Home infusions</option>
+            <option value="Independent lab">Independent lab</option>
+            <option value="Same Day Delivery">Same Day Delivery</option>
+            <option value="Dedicated Route Service">
+              Dedicated Route Service
+            </option>
+            <option value="On-Demand service">On-Demand service</option>
+            <option value="Route Optimization Tools">
+              Route Optimization Tools
+            </option>
+          </select>
+        </div>
+        <div>
+          <label for="fullname" class="block mb-2 text-sm font-bold"
+            >Email address *</label
+          ><input
+            id="email"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5"
+            placeholder="Enter email address"
+            required=""
+            type="email"
+            name="email"
+          />
+        </div>
+        <div>
+          <label for="fullname" class="block mb-2 text-sm font-bold"
+            >Phone number *</label
+          ><input
+            id="phone"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-2.5"
+            placeholder="Enter phone number"
+            required=""
+            type="input"
+            name="phone"
+          />
+        </div>
+      </div>
+      <div>
+        <label for="fullname" class="block mb-2 text-sm font-bold"
+          >Comments *</label
+        ><textarea
+          id="comment"
+          rows="6"
+          name="comment"
+          class="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm border border-gray-300"
+          placeholder="Enter comment"
+          required=""
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#00A600] sm:w-fit hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-primary"
+      >
+        Submit Request
+      </button>
+    </form>
+  </body>
+</html>
