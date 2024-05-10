@@ -82,7 +82,10 @@ const Navigation = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/order" className="block py-2">
+                  <Link
+                    href="https://airtable.com/appUB3ydpy1Zzje1X/shrHgyIeDKTXU4q4G"
+                    className="block py-2"
+                  >
                     <Button
                       variant="default"
                       className="bg-[#FC5500] hover:bg-[#FC5500] rounded text-white px-8"
