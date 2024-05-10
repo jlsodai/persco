@@ -29,13 +29,11 @@ const OrderPage = () => {
             shortly.
           </p>
           <form
-            action="#"
             className="space-y-8"
             name="order"
             data-netlify="true"
             method="POST"
           >
-            <input type="hidden" name="form-name" value="order" />
             <div className="grid md:grid-cols-2 gap-8">
               <FormInput
                 label="Pickup Location"
