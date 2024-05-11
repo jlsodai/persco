@@ -31,8 +31,8 @@ const OrderPage = () => {
           <form
             className="space-y-8"
             name="order"
-            data-netlify="true"
             method="POST"
+            data-netlify="true"
           >
             <div className="grid md:grid-cols-2 gap-8">
               <FormInput
