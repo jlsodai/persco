@@ -1,6 +1,54 @@
 import PageTitle from "@/components/PageTitle";
 import FormInput from "@/components/ui/forms/FormInput";
+import { redirect } from "next/navigation";
+import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
+async function send(formData: FormData) {
+  "use server";
+
+  const pickup_location = formData.get("pickup_location");
+  const delivery_location = formData.get("delivery_location");
+  const delivery_date = formData.get("delivery_date");
+  const pickup_time = formData.get("pickup_time");
+  const fullname = formData.get("fullname");
+  const service = formData.get("service");
+  const email = formData.get("email");
+  const phone = formData.get("phone");
+  const comment = formData.get("comment");
+  // console.log("Hello World");
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
+  const { data } = await resend.emails.send({
+    from: "michael@pdeliveryrx.com",
+    to: "jlsodai@gmail.com",
+    subject: "Order successful",
+    html: `
+    <p>Dear ${fullname},</p>
+    <p>Thanks for the request the driver will be at the pharmacy at the time requested.</p>
+    <p>Kind regards, <br/>Persco Delivery</p>
+    `,
+  });
+
+  await resend.emails.send({
+    from: "michael@pdeliveryrx.com",
+    to: "perscodelivery@gmail.com",
+    subject: "Order submission",
+    html: `
+      <p>Pickup location: ${pickup_location}</p>
+      <p>Delivery location: ${delivery_location}</p>
+      <p>Delivery date: ${delivery_date}</p>
+      <p>Pickup time: ${pickup_time}</p>
+      <p>Fullname: ${fullname}</p>
+      <p>Service: ${service}</p>
+      <p>Email: ${email}</p>
+      <p>Phone: ${phone}</p>
+      <p>Comment: ${comment}</p>
+    `,
+  });
+
+  redirect("/thank-you");
+}
 const services = [
   "Longterm care hospital systems",
   "Home infusions",
@@ -11,7 +59,7 @@ const services = [
   "Route Optimization Tools",
 ];
 const vehicles = ["Car", "SUV", "Cargo Van", "Box Truck", "Other"];
-const OrderPage = () => {
+const OrderPage = async () => {
   return (
     <>
       {/* <PageTitle title="Request for quote" /> */}
@@ -29,10 +77,10 @@ const OrderPage = () => {
             shortly.
           </p>
           <form
+            action={send}
             className="space-y-8"
-            name="order"
-            method="POST"
-            data-netlify="true"
+            // name="order"
+            // data-netlify="true"
           >
             <div className="grid md:grid-cols-2 gap-8">
               <FormInput
